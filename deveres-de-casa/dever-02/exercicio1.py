@@ -10,18 +10,18 @@ def fatorial(n):
     return n * fatorial(n - 1)
 
 #lista para calcular o fatorial dos elementos
-lista = [10, 100, 500, 1000]
+NUMEROS = [10, 100, 500, 1000]
 
 #loop que calcular o fatorial e o tempo de cada elemento da lista
-for i in lista:
+for numero in NUMEROS:
 
     tempo_antes = time.time()
-    fatorial(i)
+    fatorial(numero)
     tempo_depois = time.time()
 
     tempo_total = tempo_depois - tempo_antes
 
-    print(f"O tempo de execução para o fatorial de {i} é: {tempo_total} segundos")
+    print(f"O tempo de execução para o fatorial de {numero} é: {tempo_total} segundos")
     
 
 '''
